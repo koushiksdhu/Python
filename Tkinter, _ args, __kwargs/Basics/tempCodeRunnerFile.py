@@ -1,0 +1,1 @@
+label1.pack(expand = True)  # Label1 should occupy the entire height and width of the entire screen size.
