@@ -1,4 +1,4 @@
-import html
+import html;
 
 class QuizBrain:
 
@@ -14,17 +14,19 @@ class QuizBrain:
     def next_question(self):
         self.current_question = self.question_list[self.question_number]
         self.question_number += 1
-        quiz_select = html.unescape(self.current_question.text)
-        user_answer = input(f"Q.{self.question_number}: {quiz_select} (True/False): ")
-        self.check_answer(user_answer)
+        ques = html.unescape(self.current_question.text)
+        ques_txt = f"Q.{self.question_number}: {ques}"
+        # user_answer = input(f"Q.{self.question_number}: {ques} (True/False): ")
+        # self.check_answer(user_answer)
+        return ques_txt
 
     def check_answer(self, user_answer):
         correct_answer = self.current_question.answer
         if user_answer.lower() == correct_answer.lower():
             self.score += 1
-            print("You got it right!")
+            return True
         else:
-            print("That's wrong.")
-
-        print(f"Your current score is: {self.score}/{self.question_number}")
-        print("\n")
+            return False
+        
+        # print(f"Your current score is: {self.score}/{self.question_number}")
+        # print("\n")
