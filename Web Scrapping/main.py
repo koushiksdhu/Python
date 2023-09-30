@@ -31,7 +31,29 @@ with open("index.html") as fp:
 # print(heading)
 # print(heading.text)
 
-heading = soup.find_all(name="h1", class_="heading")
-print(heading)
-heading = [i.getText() for i in heading]
-print(heading)
+# heading = soup.find_all(name="h1", class_="heading")
+# print(heading)
+# heading = [i.getText() for i in heading]
+# print(heading)
+
+# section_heading = soup.find(name="h3", class_="heading")
+# print(section_heading.text)
+# print(section_heading.name)
+# print(section_heading.get("class"))
+
+# all_urls = soup.select(selector="p a")
+# print(all_urls)
+# all_urls = [i.getText() for i in all_urls]
+# print(all_urls)
+
+# intixta_url = soup.select_one(selector="p a")
+# print(intixta_url.text)
+
+# Selecting ID:
+# print(soup.select_one(selector="#name"))
+# # print(soup.select_one("#name")) -> both syntax does the same thing.
+# print(soup.select_one(selector="#name").text)
+
+# Selecting CLASS:
+# print(soup.select_one(".heading"))
+# print(soup.select_one(".heading").text)
