@@ -1,0 +1,1 @@
+This directory contains styles, images and other media.
