@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../static/styles.css" />
+  </head>
+  <body>
+    <div class="center">
+      <form action="/submit" method="post">
+        <input type="text" name="name" placeholder="Name" />
+        <br /><br />
+        <input type="email" name="email" placeholder="Email Address" />
+        <br /><br />
+        <input type="text" name="phn" placeholder="Phone Number" />
+        <br /><br />
+        <textarea
+          name="msg"
+          cols="30"
+          rows="5"
+          placeholder="Message"
+        ></textarea>
+        <br /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
